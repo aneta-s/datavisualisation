@@ -49,7 +49,7 @@ html, body {
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
-  
+
 }
 /*structure*/
 /*all display inside body*/
@@ -59,7 +59,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     font-family: Raleway, Arial, sans-serif;
-    background-color: #d0afcf;
+    background-color: #E7D8FC;
     font-size: 1em;
     color: rgb(128, 110, 139);
 }
