@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- add meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard January</title>
+    <link rel="stylesheet" href="style-infographic.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="icon" type='image/png' href="http://www.google.com/s2/favicons?domaind=https://aneta.netlify.app/">
+    <link rel="preload" href="//assets/fonts/AlvaroCondensed.woff" as="font" type="font/woff" crossorigin>
+</head>
+<body>
+        <header class="site-header">
+            <h3> <em>Ontwikkeling lagere- en middelbare beroepsgroepen in Nederland in het derde kwartaal van 2020</em></h3>
+            <h1>Vind de baan die bij jou past</h1>
+        </header>
+        <main class='page-content'>
+            <h2 class='screen-reader-only dashboard'>Section should have a heading for screen readers at least</h2>
+            <section class="spotlight container">
+                <h4>Vakgebieden met de meeste vacatures</h4>
+                <canvas id="bar"></canvas>
+            </section>
+            <section class="grid blue">
+                <div class="card text ">
+                    <h4>Meeste kans op het vinden van een baan</h4>
+                    <h1 class="heading">1234</h1>
+                    <p>Hier ontdek je welke bedrijven bij jou passen, welke talenten het meest worden gevraagd en waar je jouw ideale baan kunt vinden. </p>
+                    <p>Of je nou servicemonteur bent, productiemedewerker of verkoper, deze infographic helpt jou verder aan de hand van de meest actuele cijfers.</p>
+
+                </div>
+
+                <div class="card list">
+                    <h4>Meest gevraagde beroepen</h4>
+                    <h1 class="heading">TOP 6</h1>
+                    <ol>
+                        <li>Monteurs industriële machines</li>
+                        <li>Productiemedewerkers</li>
+                        <li>Verkopers</li>
+                        <li>Verzorgenden en verpleegkundigen</li>
+                        <li>Chauffeurs - en expeditie medewerkers</li>
+                        <li>Medewerkers klantenservice</li>
+                    </ol>
+                </div>
+                <div class="card chart radar">
+                    <h4>Welke werkzaamheden horen bij jouw beroep? </h4>
+                    <div class="container">
+                        <canvas id="radar"></canvas>
+                    </div>
+                    <p>Toelichting…</p>
+                </div>
+                <div class="card chart polarArea">
+                    <h4>Welke skills heb je nodig om dit werk goed te doen?</h4>
+                    <div class="container">
+                        <canvas id="polarArea"></canvas>
+                    </div>
+                    <p>Volgens het Loopbaankompas van Matchcare heb je deze 7 talenten nodig om bovenstaande beroepen tot een succes te maken.</p>
+                </div>
+                <div class="card poster">
+                    <h4>Op zoek naar een baan: waar gebeurt het?</h4>
+                    <h1 class="heading">43% op je mobiel</h1>
+                    <p>Werkzoekenden kruipen dus niet massaal achter hun desktop als ze een nieuw baan willen. Op je mobiel kun je nieuw werk overal in huis vinden. Op de bank, op de wc of tijdens het tandenpoetsen.</p>
+                </div>
+                <div class="card chart horizontalBar">
+                    <h4>Waar moet je wezen voor jouw nieuwe baan?</h4>
+                    <div class="container">
+                        <canvas id="horizontalBar"></canvas>
+                    </div>
+                    <p>Deze werkgevers en uitzendbureau’s hebben de meeste passende vacatures in 2020</p>
+                </div>
+            </section>
+            <footer>
+                <ul class="navigation sticky">
+                    <li> <a href="">Over ons</a></li>
+                    <li> <a href="">Producten</a></li>
+                    <li> <a href="">Ons team</a></li>
+                    <li class="push"> <a href="">Contact</a></li>
+                </ul>
+            </footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+            <script src="script.js"></script>
+        </main>
+</body>
+</html>

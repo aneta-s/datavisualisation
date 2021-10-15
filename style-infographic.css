@@ -1,0 +1,226 @@
+
+/* HTML Elements - How specific is your selector?*/
+/* reset  ^ added in cog */
+* {
+    box-sizing: border-box;
+    padding: 5px;
+
+}
+/*SPECIAL FONTS*/
+@font-face {
+    font-family: AlvaroCondensed;
+    src: url("AlvaroCondensed.woff") format("woff"), url("AlvaroCondensed.ttf") format("truetype");
+}
+
+@font-face {
+    src: url("webfont.eot"); /* IE9 Compat Modes */
+    src: url("webfont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("webfont.woff") format("woff"), /* Modern Browsers */
+    url("webfont.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("webfont.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+/* STICKY SCREEN WHEN SCROLLING ON THE SMARTPHONE
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important
+}
+
+.centered {
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media screen and (min-width: 480px) {
+    .centered {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+*/
+
+/* utility */
+.screen-reader-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  
+}
+/*structure*/
+/*all display inside body*/
+body {
+    width: 98%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Raleway, Arial, sans-serif;
+    background-color: #d0afcf;
+    font-size: 1em;
+    color: rgb(128, 110, 139);
+}
+
+/* components */
+
+canvas{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* trying to make it responsive! */
+    /*background: lightgray;*/
+    border: 1px solid lime;
+}
+
+.card {
+    border: 1px solid red;
+}
+
+    /* TARGETING PARTICULAIR CARD */
+    .card .heading {
+        font-family: AlvaroCondensed;
+        font-size: 4em;
+        /*Keep the same margins in each box*/
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+        text-transform: uppercase;
+        color: rgb(240, 221, 241);
+        word-break: break-word;
+    }
+
+@media (min-width: 600px) {
+    .card .heading {
+        font-size: 1.5em;
+    }
+}
+
+/* type */
+ol li {
+    margin-bottom: -20px;
+}
+
+ol {
+    padding-left: 0;
+    margin-left: 15px;
+}
+
+.list li{
+    /* Equal to letter-spacing: 140%;*/
+    margin-bottom: -10px;
+}
+
+.poster h1 {
+    font-size: 4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 1.875em;
+    }
+}
+/* layout */
+
+/***********************************************************************
+ *  Cards Panel
+ **********************************************************************/
+.grid {
+    border: 1px solid orange;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+/*Everythin is responsive, it fill 1fr when it is small*/
+/***********************************************************************
+ *  Header
+ **********************************************************************/
+
+.site-header  {
+    margin: 20px 0;
+    border: 1px solid yellow;
+}
+
+    .site-header h1  {
+        text-transform: uppercase;
+        font-size: 2em;
+        color: rgb(240, 221, 241);
+    }
+
+
+.page-content {
+    border: 1px solid pink;
+}
+
+.spotlight {
+    border: 1px solid blue;
+    text-transform: uppercase;
+}
+
+.grid {
+    border: 1px solid purple;
+    padding: 40px 0;
+}
+/***********************************************************************
+ *  Navigation/Footer
+ **********************************************************************/
+.navigation {
+    border: 1px solid grey;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    /*     font-size: 0.7em; */
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        font-size: 0.7em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-center: auto;
+}
+
+.navigation li {
+    padding: 20px;
+}
+
+.navigation a {
+    color: #F0DDF1;
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    .grid {
+        border: 1px solid orange;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /*Everythin is responsive, it fill 1fr when it is small*/
+    }
+}
+/***********************************************************************
+ *  Footer
+ *********************************************************************
+footer {
+    text-align: center;
+}
+*/
+/*NOTITIES
+1. Figure out your layout with story
+2. Make it respponsive
+3 the resit is fun..
+More links:
+https://paulund.co.uk/how-to-create-shiny-css-buttons
+https://web.dev/responsive-web-design-basics/
+watch kevin powel how to make portfolio with a grid https://www.youtube.com/watch?v=plRcoRqLriw&list=PL4-IK0AVhVjPv5tfS82UF_iQgFp4Bl998
+centered .container https://stackoverflow.com/questions/36229356/whats-the-equivalent-of-the-container-bootstrap-class-in-purecss-io */
+
+
